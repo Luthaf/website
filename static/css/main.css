@@ -1,22 +1,131 @@
+/*
+Color scheme to use
 
+color-primary-lightest: #29506D
+color-primary-light #537A99
+color-primary: #3C6483
+color-primary-dark #1A3D58
+color-primary-darkest #0E2B42
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+color-secondary-1-lightest: #343477 }
+color-secondary-1-light #6161A6 }
+color-secondary-1: #48488F }
+color-secondary-1-dark #22225F }
+color-secondary-1-darkest #141448 }
 
+color-secondary-2-lightest: #277553 }
+color-secondary-2-light #53A381 }
+color-secondary-2: #3B8C69 }
+color-secondary-2-dark #175D3F }
+color-secondary-2-darkest #0B462D }
+*/
 
+html, body, .container-fluid, .row {
+	height: 100%;
+}
 
+body {
+	font-size: 170%;
+}
 
+img {
+	max-width: 100%;
+}
 
+.separator {
+	border: 2px solid #666 !important;
+	border-radius: 400%;
+	width: 30%;
+	min-width: 100px;
+}
 
+.container-fluid .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
+.sidebar {
+  background-color: #0E2B42;
+}
 
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #0E2B42;
+  }
+}
 
+.sidebar a {
+  color: white;
+}
 
+.sidebar li a:hover {
+  color: black;
+  background: #3C6483
+}
 
+.navbar-brand {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
 
+.navbar-brand img {
+    display: block;
+    width: 120px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
 
+.social {
+	display: block;
+	margin: auto;
+	width: 120px;
+	padding: 0;
+	text-align: center;
+}
+.social li {
+	display: inline-block;
+}
+.social a {
+	font-size: 18pt;
+	padding: 0 8px;
+}
 
+.content {
+    padding: 5em;
+}
 
+#institute {
+    font-size: 75%;
+}
 
+.big-icon {
+	font-size: 500%;
+	display: block;
+}
 
+.spacer {
+	display: block;
+	margin-top: 1em;
+}
+
+#contact {
+	text-align: center;
+}
+
+#contact a {
+	color: #175D3F;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	color: #53A381;
+}

@@ -1,38 +1,27 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="jumbotron">
-  <div class="container">
-    <h1>Welcome to Cactus!</h1>
-    <p>Get started with this template based on HTML 5 Boilerplate. Go ahead, explore!</p>
-  </div>
-</div>
-
 <div class="container">
-  <!-- Example row of columns -->
-  <div class="row">
+    <h1>About me</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="{% static '/static/images/zeolite.png' %}" alt="Zeolite crystal"/>
+        </div>
+        <div class="col-sm-8">
+            <p>I am a second year PhD student in theoretical chemistry in the
+            <a href="http://coudert.name/">Coudert</a> group at
+            <a href="http://chimie-paristech.fr/">Chimie ParisTech</a>.</p>
 
-    <div class="col-lg-3">
-      <h2>Full featured template engine</h2>
-      <p>Cactus uses and extends Django's templating engine. If you've built sites using Django before, you'll feel right at home.</p>
+            <p> My thesis topic is the intrusion of liquids in nanoporous
+            materials; the coupling of such intrusion to mecanical properties
+            and deformations; and how to simulate coupled intrusion-deformation
+            using classical methods.</p>
+
+            <p>I am using Hybrid Monte-Carlo simulations in the Osmotic ensemble
+            to overcome the limitations of both Monte-Carlo and Molecular
+            Dynamics in the simulation of flexible open systems.</p>
+
+        </div>
     </div>
-
-    <div class="col-lg-3">
-      <h2>Pretty URLs</h2>
-      <p>Cactus can prettify URLs, so you can turn <code>/about.html</code> into a fancier <code>/about/</code>.</p>
-    </div>
-
-    <div class="col-lg-3">
-      <h2>Minification & Fingerprinting</h2>
-      <p>For maximum performance, Cactus can minify and fingerprint your static assets. As for your pages, Cactus will automatically compress them.</p>
-   </div>
-
-    <div class="col-lg-3">
-      <h2>And much more</h2>
-      <p>There's of course a lot more you can do with Cactus. Plus, Cactus's plugin framework lets you easily extend its functionality.</p>
-   </div>
-
-
-  </div>
 </div>
 {% endblock %}

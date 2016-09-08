@@ -1,10 +1,40 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="jumbotron">
-  <div class="container">
-    <h1>Make this a contact form!</h1>
-    <p>Give your contact info, or use a SaaS solution to add dynamic contact forms to your static website.</p>
-  </div>
+<div class="container">
+    <h1>Contact</h1>
+
+    <span class="spacer"></span><span class="spacer"></span>
+    <div class="row" id="contact">
+        <div class="col-sm-4">
+            <a href="mailto://guillaume.fraux@chimie-paristech.fr">
+                <i class="fa fa-at big-icon" aria-hidden="true"></i>
+                guillaume.fraux@chimie-paristech.fr
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a href="http://luthaf.github.io/">
+                <i class="fa fa-commenting-o big-icon" aria-hidden="true"></i>
+                My blog
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a href="http://twitter.com/__luthaf__">
+                <i class="fa fa-twitter big-icon" aria-hidden="true"></i>
+                @__luthaf__
+            </a>
+        </div>
+    </div>
+    <span class="spacer"></span>
+    <div class="row" id="contact">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <a href="http://github.com/Luthaf">
+                <i class="fa fa-github big-icon" aria-hidden="true"></i>
+                Luthaf
+            </a>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
 </div>
 {% endblock %}

@@ -1,0 +1,22 @@
+language: python
+branches:
+  only:
+    - master
+install:
+    - git config --global user.email "luthaf@luthaf.fr"
+    - git config --global user.name "Travis-CI autobuild"
+    - git config --global push.default simple
+    - git config credential.helper "store --file=.git/credentials"
+    - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+script:
+    - pip install cactus pygments
+    - git clone -b gh-pages https://github.com/Luthaf/website www
+    - cactus build
+    - mv .build/* www/
+    - cd www
+    - git add .
+    - git commit -a -m "[AUTO-COMMIT] Build the website"
+    - git push -q https://Luthaf:$GH_TOKEN@github.com/luthaf/website HEAD:gh-pages
+env:
+  global:
+      secure: "qqu9ijLB9cl48hH1KMCgtq+zhUS/PZk4ndPKKg7lVMmJZbySHqXyWrnKuqycw5NFwN7iRDol1IUzevr9XgWVyLiIxk67KauWReSM3TkJpkuQx2HnI4fSSgCSFcccVgmlyPHuGm3wTMm8qztYWLLYARIvR/hcvYvfxkAP+GTY+0aEs1oPCVBkNZWa8YaI4Akm8yQoVqDJccm14SnwurFhhHx3wg9aIy5Bw508PgEpwgB9E38nv/tnLmcA9yIOSmb6ekhyU9+VIb2lTacZ/MeClgxY4mXOaY4SuryAhb/hYt834ZzWeRPjCIzW5beJTynPTMFLWRoCLEim4OAUD1nRvW7O81zJQCVmUEb7YpiRESbssXVShr+9Zodv202/dhDz8y98FjRQ0RdJjdF+mABEspkQVeXRVXw0LoCwV8z6FUQTN5GVAeVjeoUhAuSJySCjfp+Cm5BLzZT6fjCwtJ0q9w8TJs3YBmuNcBo7ATLseQ+AacD4XdtfuFtmHG5IquMwbG6Dh0X8omr9mJCY04j4vhBWqU24dnSvKzYM4tlIM8V6flintWcSkmAfWRASQxxmXh3Wl0igdfQuzNWQw+2qrFV1WdheaeXZciw3EJTzWYj2B4Ck+v5oqLrwvMp5ahzWwmUdHPJDGO/0kVZertPf/Lsk+OselhTpFWTlk+KyabE="

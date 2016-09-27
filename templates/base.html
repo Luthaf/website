@@ -14,44 +14,50 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2 sidebar">
-          <div class="nav nav-stacked">
-             <div class="navbar-header navbar-brand">
-                 <a href="{% url '/' %}">
-                   <img src="{% static '/static/images/identity.jpg' %}" alt="identity picture"/>
-                 </a>
-               <p id="name">Guillaume Fraux</p>
-               <p id="institute">PhD Student // Chimie ParisTech</p>
-             </div>
+<div class="container-fluid"><div class="row">
+    <div class="col-md-2 sidebar">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-             <ul class="social">
-                 <li><a href="mailto://guillaume.fraux@chimie-paristech.fr">
-                     <i class="fa fa-at" aria-hidden="true"></i>
-                 </a></li>
-                 <li><a href="https://twitter.com/__luthaf__">
-                     <i class="fa fa-twitter" aria-hidden="true"></i>
-                 </a></li>
-             </ul>
-          </div>
-          <nav class="navbar" role="navigation">
-            <ul class="nav nav-stacked">
-              <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="{% url '/' %}">About</a></li>
-              <li class="{% if_current_page '/publist.html' 'active' '' %}"><a href="{% url '/publist.html' %}">Publications</a></li>
-              <li class="{% if_current_page '/software.html' 'active' '' %}"><a href="{% url '/software.html' %}">Software</a></li>
-              <li class="{% if_current_page '/contact.html' 'active' '' %}"><a href="{% url '/contact.html' %}">Contact</a></li>
-              <li><a href="{% static '/static/pdf/cv.pdf' %}">CV</a></li>
-            </ul>
-          </nav>
-        </div>
+            <div>
+                <img id="identity" src="{% static '/static/images/identity.jpg' %}" alt="identity picture"/>
+                <p class="navbar-brand">Guillaume Fraux</p>
+                <ul class="social">
+                    <li><a href="mailto://guillaume.fraux@chimie-paristech.fr">
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/__luthaf__">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
+            </div>
 
-        <div class="col-sm-10 col-sm-offset-2 content">
-         {% block body %}
-         {% endblock %}
-        </div>
-      </div>
+            <div class="spacer"></div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-stacked">
+                    <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="{% url '/' %}">About</a></li>
+                    <li class="{% if_current_page '/publist.html' 'active' '' %}"><a href="{% url '/publist.html' %}">Publications</a></li>
+                    <li class="{% if_current_page '/software.html' 'active' '' %}"><a href="{% url '/software.html' %}">Software</a></li>
+                    <li class="{% if_current_page '/contact.html' 'active' '' %}"><a href="{% url '/contact.html' %}">Contact</a></li>
+                    <li><a href="{% static '/static/pdf/cv.pdf' %}">CV</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
+
+    <div class="col-md-10 content">
+        {% block body %}
+        {% endblock %}
+    </div>
+</div></div>
+    <script src="{% static '/static/js/vendor/jquery-3.1.1.min.js' %}"></script>
     <script src="{% static '/static/js/vendor/bootstrap.js' %}"></script>
 </body>
 

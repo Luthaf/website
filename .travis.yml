@@ -11,8 +11,9 @@ install:
 script:
     - pip install cactus pygments
     - git clone -b gh-pages https://github.com/Luthaf/website www
+    - rm -rf www/*
     - cactus build
-    - cp -r .build/* www/
+    - mv .build/* www/
     - cd www
     - git add .
     - git commit -a -m "[AUTO-COMMIT] Build the website"

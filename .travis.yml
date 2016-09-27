@@ -12,7 +12,7 @@ script:
     - pip install cactus pygments
     - git clone -b gh-pages https://github.com/Luthaf/website www
     - cactus build
-    - mv .build/* www/
+    - cp -r .build/* www/
     - cd www
     - git add .
     - git commit -a -m "[AUTO-COMMIT] Build the website"

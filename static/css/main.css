@@ -28,8 +28,16 @@ body {
 	font-size: 170%;
 }
 
-img {
-	max-width: 100%;
+.container-fluid {
+    display: table;
+    width: 100%;
+    padding: 0px;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: table-row;
 }
 
 .separator {
@@ -37,11 +45,6 @@ img {
 	border-radius: 400%;
 	width: 30%;
 	min-width: 100px;
-}
-
-.container-fluid .row {
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .sidebar {
@@ -52,10 +55,20 @@ img {
   	padding: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 @media (min-width: 992px) {
 	.sidebar {
 		height: 100%;
 	}
+
+    .row .no-float {
+        display: table-cell;
+        float: none;
+        vertical-align: top;
+    }
 }
 
 .sidebar .navbar {

@@ -155,6 +155,7 @@ img {
 
 .spacer {
 	margin-top: 2em;
+    display: block;
 }
 
 .big-icon {
@@ -167,15 +168,15 @@ img {
 	margin-top: 1em;
 }
 
-#contact {
+.contact {
 	text-align: center;
 }
 
-#contact a {
+.contact a {
 	color: #175D3F;
 }
 
-#contact a:hover {
+.contact a:hover {
 	text-decoration: none;
 	color: #53A381;
 }

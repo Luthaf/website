@@ -20,7 +20,7 @@ color-secondary-2-dark #175D3F }
 color-secondary-2-darkest #0B462D }
 */
 
-html, body, .container-fluid, .row {
+html, body, .container-fluid {
 	height: 100%;
 }
 
@@ -161,11 +161,6 @@ img {
 .big-icon {
 	font-size: 500%;
 	display: block;
-}
-
-.spacer {
-	display: block;
-	margin-top: 1em;
 }
 
 .contact {

@@ -1,6 +1,7 @@
 language: python
+install:
+    - pip install --upgrade  -r requirements.txt
 script:
-    - pip install -r requirements.txt
     - cactus build
 deploy:
   provider: pages

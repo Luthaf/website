@@ -175,3 +175,7 @@ img {
 	text-decoration: none;
 	color: #53A381;
 }
+
+#publist li {
+	margin-bottom: 10pt;
+}

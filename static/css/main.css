@@ -43,8 +43,9 @@ body {
 .separator {
 	border: 2px solid #666 !important;
 	border-radius: 400%;
-	width: 30%;
+	width: 40%;
 	min-width: 100px;
+	margin: 2em auto;
 }
 
 .sidebar {
@@ -178,4 +179,9 @@ img {
 
 #publist li {
 	margin-bottom: 10pt;
+}
+
+.vertical-align-center {
+	display: flex;
+   	align-items: center;
 }

@@ -1,56 +1,58 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="container">
+<div class="container" style="width: 80%;">
     <h1>Research software</h1>
-    <p>
-        Most of the software I write are available in my <a href="http://github.com/Luthaf">
-        Github profile</a>. Everything there is open source, and external
-        contributions are always welcome!
-    </p>
+
+    <p>Most of the software I write is available in my <a
+    href="http://github.com/Luthaf"> Github profile</a>. Everything there is
+    open source, and external contributions are always welcome! Here are some
+    highlights of my work related to computational chemistry.</p>
 
     <hr class="separator" />
 
-    <div class="row">
+    <div class="row vertical-align-center">
         <div class="col-sm-3">
-            <a href="http://chemfiles.github.io/">
-                <img src="{% static '/static/images/chemfiles.png'%}" alt="Chemfiles logo" />
+            <a href="http://chemfiles.github.io/" style="margin: auto; display: block; width: max-content;">
+                <img src="{% static '/static/images/chemfiles.png'%}" alt="Chemfiles logo" width="130px" />
             </a>
         </div>
         <div class="col-sm-9">
-            <p><a href="http://chemfiles.org/">Chemfiles</a> is a
-            library providing functions to read and write a variety of
-            trajectory and structure formats. It allows to do format
-            conversions between incompatible software, and to write analysis
-            algorithms independently of the file format. It provides an
-            intuitive and well-documented developer interface, usable from
-            multiple languages: C, C++, Fortran, Python, Julia and Rust.</p>
+            <p><a href="http://chemfiles.org/">Chemfiles</a> is a software
+            library providing read and write capabilities for the file formats
+            used in computational chemistry. The goal of this project is to
+            enable interoperability between simulation, visualization and
+            analysis software. It also provides an advanced atomic selection
+            language to facilitate the implementation of analysis algorithms.</p>
+
+            <p>Chemfiles is written in C++, and offers intuitive and
+            well-documented developer interfaces usable from C, C++, Fortran,
+            Python, Julia and Rust.</p>
 
             <p>Various ready-to-use analysis algorithms are implemented in the
-            <a href="http://github.com/chemfiles/cfiles">cfiles</a> project,
-            using Chemfiles to read the corresponding trajectories.</p>
+            <a href="http://github.com/chemfiles/cfiles">cfiles</a> command line
+            tool, using Chemfiles to read the corresponding trajectories. It
+            provides radial distribution functions, hydrogen bonds networks,
+            rotational correlations, elastic tensor computation, and many
+            more!</p>
         </div>
     </div>
 
     <hr class="separator" />
 
-    <div class="row">
+    <div class="row vertical-align-center">
         <div class="col-sm-9">
-            <p><a href="http://lumol.org/">Lumol</a> is an
-            attempt to write a molecular simulation engine which is:</p>
-            <ol>
-                <li>flexible;</li>
-                <li>extendable;</li>
-                <li>reliable;</li>
-                <li>easy to use.</li>
-            </ol>
-
-            <p>It currently supports molecules simulations using Monte-Carlo and
-            Molecular dynamics in various thermodynamic ensembles.</p>
+            <p><a href="http://lumol.org/">Lumol</a> is a molecular simulation
+            engine aiming to be flexible, extendable, reliable and easy to use.
+            It currently supports molecular dynamics simulations in NVE, NVT and
+            NPT ensembles; Metropolis Monte Carlo simulations in NVT and NPT
+            ensemble. Various bonded and non-bonded interaction potentials are
+            available, as well as Ewald and Wolf summation methods for
+            electrostatic interactions computation.</p>
         </div>
         <div class="col-sm-3">
-            <a href="http://github.com/lumol-org/lumol">
-                <img src="{% static '/static/images/lumol.png'%}" alt="Lumol logo" />
+            <a href="http://github.com/lumol-org/lumol" style="margin: auto; display: block; width: max-content;">
+                <img src="{% static '/static/images/lumol.png'%}" alt="Lumol logo" style="width: 130px;" />
             </a>
         </div>
     </div>

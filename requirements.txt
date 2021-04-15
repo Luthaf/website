@@ -1,3 +1,2 @@
-cactus
-pygments
-google_compute_engine
+Jinja2
+watchdog

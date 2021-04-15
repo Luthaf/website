@@ -1,6 +1,4 @@
-{% verbatim %}
 User-agent: *
 Disallow:
 
 Sitemap: sitemap.xml
-{% endverbatim %}

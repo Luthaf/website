@@ -1,0 +1,61 @@
+{% extends "base.html" %} {% block body %}
+<div class="container" style="width: 80%">
+  <h1>About me</h1>
+  <div style="height: 3em"></div>
+  <div class="row vertical-align-center">
+    <div class="col-sm-4">
+      <img src="/static/images/fes.png" alt="Free energy surface exploration" />
+      <div style="height: 2em"></div>
+      <img src="/static/images/map.png" alt="Scatter plot" />
+    </div>
+    <div class="col-sm-8">
+      <p>
+        I am postdoctoral researcher in computational chemistry, working at the
+        interface between physics, chemistry and computer science in
+        <a href="https://cosmo.epfl.ch/">Michele Ceriotti</a>'s group at
+        <a href="https://epfl.ch/">EPFL</a> in Lausanne.
+      </p>
+
+      <p>
+        I currently work on application of machine learning, and in particular
+        unsupervised learning to material science and chemistry. In our everyday
+        life, we rely on a relatively small number of materials, with very
+        specific characteristics: ceramics, metallic alloys, polymers,
+        <i>etc.</i> However, the number of possible materials created by
+        combining different chemical elements in various proportions and
+        arrangements is gigantic. Because of this, exploring the universe of
+        possible materials to find the best one for a given application is a
+        daunting task, which can be helped by using dimensionality reduction
+        techniques and visualization algorithms.
+      </p>
+
+      <p>
+        I am particularly interested in devising, implementing and studying
+        algorithms used to simulate complex chemical behavior of simple systems
+        and emerging properties.
+      </p>
+    </div>
+  </div>
+
+  <hr class="separator" />
+
+  <div class="row vertical-align-center">
+    <div class="col-sm-8">
+      <p>
+        I did my Ph.D. with
+        <a href="http://coudert.name/">François-Xavier Coudert</a> at
+        <a href="http://chimie-paristech.fr/">Chimie ParisTech</a> —
+        <a href="https://www.psl.eu/">PSL University</a>, on the coupling of
+        intrusion and adsorption to the deformations of flexible nanoporous
+        materials. I used simulation techniques ranging from
+        <i>ab initio</i> dynamics to classical free energy methods and
+        thermodynamic calculations to improve our understanding of the atomistic
+        processes in theses systems.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <img src="/static/images/rpm3.png" alt="MOF crystal" />
+    </div>
+  </div>
+</div>
+{% endblock %}

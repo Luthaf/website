@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Guillaume Fraux | Postdoctoral researcher at EPFL</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/bootstrap.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 no-float sidebar">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div>
+              <img
+                id="identity"
+                src="/static/images/identity.jpg"
+                alt="identity picture"
+              />
+              <p class="navbar-brand">Guillaume Fraux</p>
+              <ul class="social">
+                <li>
+                  <a href="mailto://guillaume.fraux@epfl.ch">
+                    <i class="fa fa-at" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/__luthaf__">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <span class="spacer"></span>
+            <div class="collapse navbar-collapse">
+              <ul class="nav nav-stacked">
+                <li >
+                  <a href="/">About</a>
+                </li>
+                <li >
+                  <a href="/publist.html">Publications</a>
+                </li>
+                <li  class="active" >
+                  <a href="/software.html">Software</a>
+                </li>
+                <li >
+                  <a href="/contact.html">Contact</a>
+                </li>
+                <li><a href="/static/pdf/cv.pdf">CV</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-10 no-float content">
+          
+<div class="container" style="width: 80%">
+  <h1>Research software</h1>
+
+  <p>
+    Most of the software I write is available in my
+    <a href="http://github.com/Luthaf"> Github profile</a>. Everything there is
+    open source, and external contributions are always welcome! Here are some
+    highlights of my work related to computational chemistry.
+  </p>
+
+  <hr class="separator" />
+
+  <div class="row vertical-align-center">
+    <div class="col-sm-9">
+      <p>
+        <a href="http://chemiscope.org/">Chemiscope</a> is an online interactive
+        explorer for databases of molecules and materials. It presents a map
+        containing structural descriptors and physical properties of compounds
+        in the database together with the atomistic structure of the compounds.
+        It allow users to explore, understand and rationalize structure/property
+        relationships within the database.
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <a
+        href="http://chemiscope.org"
+        style="margin: auto; display: block; width: max-content"
+      >
+        <img
+          src="/static/images/map.png"
+          alt="chemiscope"
+          style="width: 240px"
+        />
+      </a>
+    </div>
+  </div>
+
+  <hr class="separator" />
+
+  <div class="row vertical-align-center">
+    <div class="col-sm-3">
+      <a
+        href="http://chemfiles.github.io/"
+        style="margin: auto; display: block; width: max-content"
+      >
+        <img
+          src="/static/images/chemfiles.png"
+          alt="Chemfiles logo"
+          width="130px"
+        />
+      </a>
+    </div>
+    <div class="col-sm-9">
+      <p>
+        <a href="http://chemfiles.org/">Chemfiles</a> is a software library
+        providing read and write capabilities for the file formats used in
+        computational chemistry. The goal of this project is to enable
+        interoperability between simulation, visualization and analysis
+        software. It also provides an advanced atomic selection language to
+        facilitate the implementation of analysis algorithms.
+      </p>
+
+      <p>
+        Chemfiles is written in C++, and offers intuitive and well-documented
+        developer interfaces usable from C, C++, Fortran, Python, Julia and
+        Rust.
+      </p>
+
+      <p>
+        Various ready-to-use analysis algorithms are implemented in the
+        <a href="http://github.com/chemfiles/cfiles">cfiles</a> command line
+        tool, using Chemfiles to read the corresponding trajectories. It
+        provides radial distribution functions, hydrogen bonds networks,
+        rotational correlations, elastic tensor computation, and many more!
+      </p>
+    </div>
+  </div>
+
+  <hr class="separator" />
+
+  <div class="row vertical-align-center">
+    <div class="col-sm-9">
+      <p>
+        <a href="http://lumol.org/">Lumol</a> is a molecular simulation engine
+        aiming to be flexible, extendable, reliable and easy to use. It
+        currently supports molecular dynamics simulations in NVE, NVT and NPT
+        ensembles; Metropolis Monte Carlo simulations in NVT and NPT ensemble.
+        Various bonded and non-bonded interaction potentials are available, as
+        well as Ewald and Wolf summation methods for electrostatic interactions
+        computation.
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <a
+        href="http://github.com/lumol-org/lumol"
+        style="margin: auto; display: block; width: max-content"
+      >
+        <img
+          src="/static/images/lumol.png"
+          alt="Lumol logo"
+          style="width: 130px"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/vendor/bootstrap.js"></script>
+  </body>
+
+   
+</html>
